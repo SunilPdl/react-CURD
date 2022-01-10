@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "Sunil Paudel",
+      "username": "sunilpaudel",
+      "email": "sunilpaudel@gmail.com",
+      "phone": "8749485763",
+      "id": 1
+    },
+    {
+      "name": "Alson KC",
+      "username": "alsonkc",
+      "email": "alsonkc@gmail.com",
+      "phone": "1234567890",
+      "id": 2
+    },
+    {
+      "name": "Anil GC",
+      "username": "anilgc",
+      "email": "anilogc@gmail.com",
+      "phone": "0987654321",
+      "id": 3
+    }
+  ]
+}
