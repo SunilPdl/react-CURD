@@ -13,9 +13,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path='/'> <AllUsers /> </Route>
-          <Route exact path="/add"> <AddUsers /> </Route>
-          <Route> <UserNotFound /> </Route>
+          <Route exact path='/' element={<AllUsers />} />
+          <Route exact path='/add' element={<AddUsers />} />
+          <Route element={<UserNotFound /> } />
         </Routes>
       </Router>
     </div>
