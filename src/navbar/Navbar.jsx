@@ -5,18 +5,18 @@ import { NavLink } from 'react-router-dom';
 
 const useStyle = makeStyles({
   header:{
-        background:"#111111"
+        background:"blue"
   },
   navItemGap:{
     gap:"20vw"
   },
   h1:{
     color:"orange",
-    fontSize:"40px",
+    fontSize:"30px",
     textTransform:"uppercase"
   },
   navlink:{
-    color:"#ffffff",
+    color:"#FFFFFF",
     fontSize:"30px",
     textDecoration:"none"
   }
