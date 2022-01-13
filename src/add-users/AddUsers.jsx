@@ -1,5 +1,6 @@
 import { Button, FormControl, FormGroup, Input, InputLabel, makeStyles } from '@material-ui/core';
 import React,{useState} from 'react';
+import { useNavigate } from 'react-router';
 
 import { addUsers } from '../services/API';
 
@@ -24,6 +25,7 @@ const initialValues = {
 
 const AddUsers = () => {
     const classes = useStyle();
+    const navigate = useNavigate();
 
     const[user , setUser] = useState(initialValues);
     const {name,username,email,phone} = user;
@@ -35,6 +37,7 @@ const AddUsers = () => {
 
     const addUserDetails = async()=>{
         await addUsers(user);
+        navigate('/');
     }
     return (
         <FormGroup className={classes.formContainer}>
@@ -55,7 +58,7 @@ const AddUsers = () => {
                 <Input onChange = {(e)=> onChangeValue(e) } name='phone' value={phone} />
             </FormControl>
 
-            <Button variant="contained" color="primary" className={classes.button} onClick={()=> addUserDetails() } >Add User</Button>
+            <Button variant="contained" color="primary" className={classes.button} onClick={()=> addUserDetails()} >Add User</Button>
         </FormGroup>
     )
 }
