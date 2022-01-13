@@ -1,15 +1,10 @@
 import React from 'react';
-
+import pageNotFound from '../image/pageNotFound.jpg';
 const UserNotFound = () => {
     return (
         <div>
-            <h1>Not Found.</h1>
-            <h1>Not Found.</h1>
-            <h1>Not Found.</h1>
-            <h1>Not Found.</h1>
-            <h1>Not Found.</h1>
-            <h1>Not Found.</h1>
-            <h1>Not Found.</h1>
+            <img src= {pageNotFound} alt='' height={450} width={450}
+            style={{marginTop:"12vh"}} />
         </div>
     )
 }
